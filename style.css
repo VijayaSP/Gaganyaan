@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    border: border-box; 
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.block{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0.5%;
+    background-image: linear-gradient(rgba(0, 8, 253, 0.254),rgba(0, 8, 253, 0.254)),url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+.islog img{
+    height: 145px;
+    width: 145px;
+}
+.about h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    color: rgb(255, 213, 0);
+    font-size: 70px;
+    font-weight: 900;
+    
+}
+.about p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    color: rgba(255, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    background-color: black;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show{
+    font-size: 30px;
+    font-weight: 900;
+}
+.clock > div{
+    margin: 50px 32px;
+    text-align: center;
+    border: 3px solid white;
+    padding: 20px 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 12px rgba(0.5,1,0.5,1);
+    box-sizing: border-box;
+    color: yellow;
+    min-width: 130px;
+    background-color: black;
+}
+
+@media(max-width:700px){
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+    .islog img{
+        height: 65px;
+        width: 85px;
+    }
+    .about h1{
+        font-size: 30px;
+        font-weight: 500;
+    } 
+    .about p{
+        font-size: 13px;
+        font-weight: 700;
+    } 
+    .clock > div{
+        margin: 20px 15px;
+
+    } 
+    .clock{
+        flex-wrap: wrap;
+    } 
+    .clock > div{
+        margin: 14px auto;
+        max-width: 155px;
+
+    } 
+}
